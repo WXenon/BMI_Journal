@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "234858117823",
+    "project_id": "bmi-journal",
+    "storage_bucket": "bmi-journal.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:234858117823:android:86d6c8d50fbb9e8dfce40a",
+        "android_client_info": {
+          "package_name": "com.example.bmijournal"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "234858117823-1f2fjdpjve0b251t1hlhvror87cjdgqn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.bmijournal",
+            "certificate_hash": "4b40cf615f10c401b78d7444f86c18f66b764b5e"
+          }
+        },
+        {
+          "client_id": "234858117823-1l8tlcrkd0r1enueogodvj0rcc1ti2fk.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCPHxrBuW3fz3upsWcD2GWPLrVnh6qZ0lY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "234858117823-1l8tlcrkd0r1enueogodvj0rcc1ti2fk.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
