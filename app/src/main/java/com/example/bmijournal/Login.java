@@ -1,14 +1,14 @@
-package com.example.dawjournal;
+package com.example.bmijournal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
-public class NewStartPage extends AppCompatActivity {
+public class Login extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_new_start_page);
+        setContentView(R.layout.login);
     }
 }
