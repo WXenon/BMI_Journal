@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_weight="0.8"
+        android:gravity="center"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        android:weightSum="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:gravity="center_horizontal"
+            android:layout_weight="0.2">
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="100dp"
+                android:layout_height="120dp"
+                app:srcCompat="@drawable/_f5a0b66_782b_45d2_8b49_ee7343f981d8" />
+        </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="center"
+        android:layout_weight="0.5"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/profileName"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Name"></TextView>
+
+        <TextView
+            android:id="@+id/profileSex"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Sex (M/F)"></TextView>
+
+        <TextView
+            android:id="@+id/profileDOB"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Date Of Birth"></TextView>
+
+        <TextView
+            android:id="@+id/profileAge"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Age"></TextView>
+
+        <TextView
+            android:id="@+id/profileWeight"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Weight"></TextView>
+
+        <TextView
+            android:id="@+id/profileHeight"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:ems="10"
+            android:text="Height"></TextView>
+
+    </LinearLayout>
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar"
+        android:layout_width="411dp"
+        android:layout_height="71dp"
+        android:background="@android:color/holo_orange_dark"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0"
+        app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
