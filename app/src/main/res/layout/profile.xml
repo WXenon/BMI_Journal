@@ -62,27 +62,6 @@
             android:ems="10"
             android:text="Date Of Birth"></TextView>
 
-        <TextView
-            android:id="@+id/profileAge"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:text="Age"></TextView>
-
-        <TextView
-            android:id="@+id/profileWeight"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:text="Weight"></TextView>
-
-        <TextView
-            android:id="@+id/profileHeight"
-            android:layout_width="300dp"
-            android:layout_height="40dp"
-            android:ems="10"
-            android:text="Height"></TextView>
-
     </LinearLayout>
 
     </LinearLayout>
