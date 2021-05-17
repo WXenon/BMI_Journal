@@ -26,8 +26,8 @@
 
         <EditText
             android:id="@+id/textAge"
-            android:layout_width="match_parent"
-            android:layout_height="65dp"
+            android:layout_width="316dp"
+            android:layout_height="77dp"
             android:ems="10"
             android:text="Age" />
 
