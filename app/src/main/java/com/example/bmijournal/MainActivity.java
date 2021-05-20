@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.Menu;
 import android.widget.Button;
 
+import com.example.bmijournal.ui.history.bmihistory;
 import com.google.android.material.snackbar.Snackbar;
 import com.google.android.material.navigation.NavigationView;
 
@@ -43,23 +44,23 @@ public class MainActivity extends AppCompatActivity {
         // Passing each menu ID as a set of Ids because each
         // menu should be considered as top level destinations.
         mAppBarConfiguration = new AppBarConfiguration.Builder(
-                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow)
+                R.id.nav_home, R.id.nav_gallery, R.id.nav_slideshow, R.id.nav_history)
                 .setDrawerLayout(drawer)
                 .build();
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
 
-        Button buttonBMIHistory = (Button)findViewById(R.id.buttonBMIHistory);
-        buttonBMIHistory.setOnClickListener( new View.OnClickListener() {
-
-            @Override
-            public void onClick(View v) {
-                // TODO Auto-generated method stub
-                Intent intent = new Intent(getApplicationContext(), bmihistory.class);
-                startActivity(intent);
-            }
-        });
+//        Button buttonBMIHistory = (Button)findViewById(R.id.buttonBMIHistory);
+//        buttonBMIHistory.setOnClickListener( new View.OnClickListener() {
+//
+//            @Override
+//            public void onClick(View v) {
+//                // TODO Auto-generated method stub
+//                Intent intent = new Intent(getApplicationContext(), bmihistory.class);
+//                startActivity(intent);
+//            }
+//        });
     }
 
     @Override

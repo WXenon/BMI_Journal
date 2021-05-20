@@ -24,7 +24,7 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".bmihistory"
+            android:name=".ui.history.bmihistory"
             android:label="@string/app_name"
             android:theme="@style/Theme.BMIJournal.NoActionBar" >
             <intent-filter>
