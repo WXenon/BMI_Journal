@@ -1,10 +1,11 @@
-package com.example.bmijournal;
+package com.example.bmijournal.ui.history;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.example.bmijournal.R;
 import com.github.mikephil.charting.charts.PieChart;
 import com.github.mikephil.charting.data.BarEntry;
 import com.github.mikephil.charting.data.PieData;
@@ -19,7 +20,7 @@ public class PieChartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_pie_chart);
+        setContentView(R.layout.fragment_pie_chart);
 
         PieChart pieChart = findViewById(R.id.pieChart);
 

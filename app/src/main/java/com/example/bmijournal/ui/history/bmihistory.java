@@ -2,14 +2,10 @@ package com.example.bmijournal.ui.history;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.view.View;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bmijournal.BarChartActivity;
-import com.example.bmijournal.PieChartActivity;
 import com.example.bmijournal.R;
-import com.example.bmijournal.RadarChartActivity;
 
 public class bmihistory extends AppCompatActivity {
 

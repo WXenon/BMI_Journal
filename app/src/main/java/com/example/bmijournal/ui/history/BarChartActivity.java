@@ -1,10 +1,11 @@
-package com.example.bmijournal;
+package com.example.bmijournal.ui.history;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.example.bmijournal.R;
 import com.github.mikephil.charting.charts.BarChart;
 import com.github.mikephil.charting.data.BarData;
 import com.github.mikephil.charting.data.BarDataSet;
@@ -18,7 +19,7 @@ public class BarChartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bar_chart);
+        setContentView(R.layout.fragment_bar_chart);
 
         BarChart barChart = findViewById(R.id.barChart);
 

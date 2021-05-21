@@ -1,10 +1,11 @@
-package com.example.bmijournal;
+package com.example.bmijournal.ui.history;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.graphics.Color;
 import android.os.Bundle;
 
+import com.example.bmijournal.R;
 import com.github.mikephil.charting.charts.RadarChart;
 import com.github.mikephil.charting.components.XAxis;
 import com.github.mikephil.charting.data.RadarData;
@@ -19,7 +20,7 @@ public class RadarChartActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_radar_chart);
+        setContentView(R.layout.fragment_radar_chart);
 
         RadarChart radarChart = findViewById(R.id.radarChart);
 

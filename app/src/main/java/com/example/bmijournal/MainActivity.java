@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
 
     private AppBarConfiguration mAppBarConfiguration;
     private ActivityMainBinding binding;
+    private boolean isFABOpen = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -35,10 +36,17 @@ public class MainActivity extends AppCompatActivity {
         binding.appBarMain.fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
-                        .setAction("Action", null).show();
+
+//                Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
+//                        .setAction("Action", null).show();
+                if(!isFABOpen){
+                    showFABMenu(binding);
+                }else{
+                    closeFABMenu(binding);
+                }
             }
         });
+
         DrawerLayout drawer = binding.drawerLayout;
         NavigationView navigationView = binding.navView;
         // Passing each menu ID as a set of Ids because each
@@ -50,17 +58,20 @@ public class MainActivity extends AppCompatActivity {
         NavController navController = Navigation.findNavController(this, R.id.nav_host_fragment_content_main);
         NavigationUI.setupActionBarWithNavController(this, navController, mAppBarConfiguration);
         NavigationUI.setupWithNavController(navigationView, navController);
+    }
 
-//        Button buttonBMIHistory = (Button)findViewById(R.id.buttonBMIHistory);
-//        buttonBMIHistory.setOnClickListener( new View.OnClickListener() {
-//
-//            @Override
-//            public void onClick(View v) {
-//                // TODO Auto-generated method stub
-//                Intent intent = new Intent(getApplicationContext(), bmihistory.class);
-//                startActivity(intent);
-//            }
-//        });
+    private void showFABMenu(ActivityMainBinding binding){
+        isFABOpen=true;
+        binding.appBarMain.fabAddBMI.animate().translationY(-getResources().getDimension(R.dimen.standard_55));
+        binding.appBarMain.fabExtra.animate().translationY(-getResources().getDimension(R.dimen.standard_105));
+//        binding.appBarMain.fab.animate().translationY(-getResources().getDimension(R.dimen.standard_155));
+    }
+
+    private void closeFABMenu(ActivityMainBinding binding){
+        isFABOpen=false;
+        binding.appBarMain.fabAddBMI.animate().translationY(0);
+        binding.appBarMain.fabExtra.animate().translationY(0);
+//        binding.appBarMain.fab.animate().translationY(0);
     }
 
     @Override

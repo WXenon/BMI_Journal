@@ -20,10 +20,35 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <Button
-        android:id="@+id/buttonBMIHistory"
+    <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="@string/radar_chart"
-        tools:ignore="MissingConstraints" />
+        android:layout_height="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="1"
+        android:gravity="center">
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:gravity="center"
+            android:layout_weight="0.8">
+            <Button
+                android:id="@+id/buttonBarChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/bar_chart"/>
+
+            <Button
+                android:id="@+id/buttonPieChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/pie_chart"/>
+
+            <Button
+                android:id="@+id/buttonRadarChart"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/radar_chart"/>
+        </LinearLayout>
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
