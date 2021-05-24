@@ -1,4 +1,4 @@
-package com.example.bmijournal;
+package com.example.run4urlyfe;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.bmijournal", appContext.getPackageName());
+        assertEquals("com.example.run4urlyfe", appContext.getPackageName());
     }
 }

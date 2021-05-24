@@ -1,4 +1,4 @@
-package com.example.bmijournal.ui.location;
+package com.example.run4urlyfe.ui.location;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,8 +12,8 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.bmijournal.databinding.FragmentHomeBinding;
-import com.example.bmijournal.databinding.FragmentLocationBinding;
+import com.example.run4urlyfe.databinding.FragmentHomeBinding;
+import com.example.run4urlyfe.databinding.FragmentLocationBinding;
 
 public class LocationFragment extends Fragment {
 

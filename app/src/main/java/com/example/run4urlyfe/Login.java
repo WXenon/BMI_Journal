@@ -1,4 +1,4 @@
-package com.example.bmijournal;
+package com.example.run4urlyfe;
 
 import androidx.appcompat.app.AppCompatActivity;
 

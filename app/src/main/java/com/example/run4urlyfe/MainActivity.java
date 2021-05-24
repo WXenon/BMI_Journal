@@ -1,4 +1,4 @@
-package com.example.bmijournal;
+package com.example.run4urlyfe;
 
 import android.os.Bundle;
 import android.view.View;
@@ -13,7 +13,7 @@ import androidx.navigation.ui.NavigationUI;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.bmijournal.databinding.ActivityMainBinding;
+import com.example.run4urlyfe.databinding.ActivityMainBinding;
 
 public class MainActivity extends AppCompatActivity {
 

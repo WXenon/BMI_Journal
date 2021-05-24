@@ -1,16 +1,16 @@
-package com.example.bmijournal.ui.location;
+package com.example.run4urlyfe.ui.home;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class LocationViewModel extends ViewModel {
+public class HomeViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public LocationViewModel() {
+    public HomeViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is location fragment");
+        mText.setValue("This is home fragment");
     }
 
     public LiveData<String> getText() {
