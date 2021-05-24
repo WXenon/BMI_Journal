@@ -24,26 +24,8 @@
         tools:layout="@layout/fragment_slideshow" />
 
     <fragment
-        android:id="@+id/nav_history"
-        android:name="com.example.bmijournal.ui.history.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_history" />
-
-    <fragment
-        android:id="@+id/nav_bar_chart"
-        android:name="com.example.bmijournal.ui.history.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_bar_chart" />
-
-    <fragment
-        android:id="@+id/nav_pie_chart"
-        android:name="com.example.bmijournal.ui.history.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_pie_chart" />
-
-    <fragment
-        android:id="@+id/nav_radar_chart"
-        android:name="com.example.bmijournal.ui.history.HistoryFragment"
-        android:label="@string/menu_history"
-        tools:layout="@layout/fragment_radar_chart" />
+        android:id="@+id/nav_location"
+        android:name="com.example.bmijournal.ui.location.LocationFragment"
+        android:label="@string/menu_location"
+        tools:layout="@layout/fragment_location" />
 </navigation>

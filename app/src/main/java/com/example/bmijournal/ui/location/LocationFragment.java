@@ -13,21 +13,22 @@ import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
 import com.example.bmijournal.databinding.FragmentHomeBinding;
+import com.example.bmijournal.databinding.FragmentLocationBinding;
 
 public class LocationFragment extends Fragment {
 
     private LocationViewModel locationViewModel;
-    private FragmentHomeBinding binding;
+    private FragmentLocationBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
         locationViewModel =
                 new ViewModelProvider(this).get(LocationViewModel.class);
 
-        binding = FragmentHomeBinding.inflate(inflater, container, false);
+        binding = FragmentLocationBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textHome;
+        final TextView textView = binding.textLocation;
         locationViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
