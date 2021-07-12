@@ -1,16 +1,16 @@
-package com.example.run4urlyfe.ui.location;
+package com.example.run4urlyfe.view.slideshow;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
 import androidx.lifecycle.ViewModel;
 
-public class LocationViewModel extends ViewModel {
+public class SlideshowViewModel extends ViewModel {
 
     private MutableLiveData<String> mText;
 
-    public LocationViewModel() {
+    public SlideshowViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is location fragment");
+        mText.setValue("This is slideshow fragment");
     }
 
     public LiveData<String> getText() {

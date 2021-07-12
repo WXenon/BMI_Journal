@@ -1,4 +1,4 @@
-package com.example.run4urlyfe.ui.location;
+package com.example.run4urlyfe.view.slideshow;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -12,24 +12,23 @@ import androidx.fragment.app.Fragment;
 import androidx.lifecycle.Observer;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.run4urlyfe.databinding.FragmentHomeBinding;
-import com.example.run4urlyfe.databinding.FragmentLocationBinding;
+import com.example.run4urlyfe.databinding.FragmentSlideshowBinding;
 
-public class LocationFragment extends Fragment {
+public class SlideshowFragment extends Fragment {
 
-    private LocationViewModel locationViewModel;
-    private FragmentLocationBinding binding;
+    private SlideshowViewModel slideshowViewModel;
+    private FragmentSlideshowBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        locationViewModel =
-                new ViewModelProvider(this).get(LocationViewModel.class);
+        slideshowViewModel =
+                new ViewModelProvider(this).get(SlideshowViewModel.class);
 
-        binding = FragmentLocationBinding.inflate(inflater, container, false);
+        binding = FragmentSlideshowBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textLocation;
-        locationViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
+        final TextView textView = binding.textSlideshow;
+        slideshowViewModel.getText().observe(getViewLifecycleOwner(), new Observer<String>() {
             @Override
             public void onChanged(@Nullable String s) {
                 textView.setText(s);

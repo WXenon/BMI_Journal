@@ -1,4 +1,4 @@
-package com.example.run4urlyfe.ui.home;
+package com.example.run4urlyfe.view.home;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

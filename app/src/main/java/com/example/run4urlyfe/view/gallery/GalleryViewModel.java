@@ -1,4 +1,4 @@
-package com.example.run4urlyfe.ui.gallery;
+package com.example.run4urlyfe.view.gallery;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;

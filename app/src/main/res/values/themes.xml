@@ -22,7 +22,7 @@
 
     <style name="Theme.Run4urlyfe.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
-    <style name="MyActionButtonOverflow" parent="Widget.AppCompat.ActionButton.Overflow">
+    <style name="MyActionButtonOverflow" parent="Theme.Run4urlyfe.AppBarOverlay">
         <item name="android:src">@drawable/baseline_person_18</item>
         <item name="android:background">?android:attr/actionBarItemBackground</item>
         <item name="android:contentDescription">"Lala"</item>

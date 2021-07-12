@@ -1,8 +1,10 @@
-package com.example.run4urlyfe;
+package com.example.run4urlyfe.view;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+
+import com.example.run4urlyfe.R;
 
 public class Login extends AppCompatActivity {
 
